@@ -1,0 +1,3 @@
+[submodule "packages/agent-notifier"]
+	path = packages/agent-notifier
+	url = https://github.com/Kipung/AgentNotify.git
