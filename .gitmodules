@@ -1,6 +1,6 @@
 [submodule "packages/agent-notifier"]
 	path = packages/agent-notifier
-	url = https://github.com/Kipung/AgentNotify.git
+	url = https://github.com/Kipung/AgentNotifier.git
 [submodule "packages/agent-vitals"]
 	path = packages/agent-vitals
 	url = https://github.com/Kipung/AgentVitals.git
