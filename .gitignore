@@ -1,0 +1,39 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Build / packaging artifacts
+*.egg-info/
+build/
+dist/
+
+# Local environments
+.venv/
+venv/
+.env
+.env.*
+.python-version
+
+# Logs / temp artifacts
+*.log
+.tmp_*
+
+# Internal session notes (not public docs)
+docs/SESSION_CONTEXT_*.md
+
+# Markdown: keep only README files by default
+**/*.md
+!README.md
+!**/README.md
