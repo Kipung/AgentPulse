@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/kipung/.local/bin/agent-notifier-claude-hook --event Stop"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/kipung/.local/bin/agent-notifier-claude-hook --event SubagentStop"
+          }
+        ]
+      }
+    ]
+  }
+}
