@@ -13,9 +13,9 @@ Built because I use agents every day and the tooling around them hasn't kept up.
 | Package | What it does | Install |
 |---|---|---|
 | [**AgentNotifier**](packages/agent-notifier) | Desktop notifications when agent tasks complete | `pipx install agent-notifier` |
-| [**AgentVitals**](packages/agent-vitals) | Live token usage, context window, and cost dashboard | `pip install agent-vitals` |
+| [**AgentVitals**](packages/agent-vitals) | Live token usage, context window, and cost dashboard | `pip install git+https://github.com/Kipung/AgentVitals` |
 
-Each package is an independent PyPI release with its own repo, versioned and releasable separately. This repo is the integration point.
+AgentNotifier is released on PyPI. AgentVitals is not on PyPI yet, so install it from GitHub. Each package has its own repo and is versioned separately. This repo is the integration point.
 
 ---
 
@@ -35,6 +35,8 @@ agent-notifier setup all --project "$PWD"
 
 Integrates via the native hook systems of each agent CLI — no wrappers required after setup. Works on macOS, Windows, and Linux with platform-native notification backends and a console fallback.
 
+![agent-notifier demo: a successful run then a failed run, each ending with a notification](docs/agent-notifier-demo.gif)
+
 → [Full documentation](packages/agent-notifier/README.md)
 
 ---
@@ -43,15 +45,7 @@ Integrates via the native hook systems of each agent CLI — no wrappers require
 
 A live Rich TUI dashboard that tracks token accounting, estimated cost, and context window consumption in real time as you work with an agent.
 
-```
-┌─ AgentVitals ────────────────────────────────────────────┐
-│ Model        │ gpt-4-turbo                                │
-│ Input tokens │ 18,432        Output tokens │ 4,210        │
-│ Session cost │ $0.41                                      │
-│ Context used │ ████████████░░░░░░░░  63%  (81K / 128K)   │
-│ Throughput   │ 1,240 tok/min  Interactions: 7             │
-└──────────────────────────────────────────────────────────┘
-```
+![agent-vitals watch: token totals and the context bar climb as Codex turns complete](docs/agent-vitals-demo.gif)
 
 Run a live dashboard alongside Codex in a second terminal:
 
@@ -123,4 +117,4 @@ See [packages/agent-notifier/README.md](packages/agent-notifier/README.md) for W
 
 ## License
 
-Both packages are MIT licensed. See individual package directories for details.
+MIT. See [LICENSE](LICENSE).
