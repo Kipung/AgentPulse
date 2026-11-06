@@ -37,3 +37,4 @@ docs/SESSION_CONTEXT_*.md
 **/*.md
 !README.md
 !**/README.md
+.claude/settings.local.json*
